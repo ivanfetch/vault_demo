@@ -127,6 +127,11 @@ function wait_for_app {
 install_terraform
 create_ssh_key
 
+# This is safe to run multiple times on an existing Terraform root module.
+notice Initializing Terraform. . .
+terraform init
+
+
 
 # IF `terraform plan` has changes to make, apply them
 notice Running \`terraform plan\` to see whether changes need to be applied. . .
