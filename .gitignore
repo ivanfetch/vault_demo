@@ -1,0 +1,11 @@
+# Ignore Terraform state files
+terraform.tfstate*
+# Ignore SSH key created for this demo
+id_rsa
+id_rsa.pub
+# Ignore Terraform plugin binaries
+.terraform/plugins
+# Ignore the Terraform binary if installed by vault-demo.sh
+terraform
+terraform.zip
+
